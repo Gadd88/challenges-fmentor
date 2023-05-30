@@ -12,14 +12,13 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family:'Red Hat Display', sans-serif;
 }
 /* 
 mobile: 375px
 desktop: 1440px */
 body{
-    background-color: rgb(186, 201, 245);
-    background-size: 130% 40%;
+    background-color: #E1E9Ff;
     font-size: 16px;
     height: 100vh;
     display: flex;
@@ -166,10 +165,8 @@ header img{
 
 @media screen and (min-width: 700px){
     body{
-        background-image: url(images/pattern-background-desktop.svg);
-        background-repeat: repeat-x;
-        background-color:rgb(186, 201, 245);
+        background-image: url(images/pattern-background-desktop.svg), #E1E9Ff;
+        background-repeat: no-repeat, no-repeat;
+        background-size: contain;
         }
-        
     }
-}
