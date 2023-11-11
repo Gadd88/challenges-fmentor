@@ -1,37 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Age calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
+<body class="bg-[var(--off-white)]">
+  <main class="w-[90%] mx-auto mt-10 rounded-lg rounded-br-[100px] h-full bg-[var(--white)] p-2">
+    <section class="flex items-center justify-evenly py-8  mb-3">
+      <article class="flex flex-col items-start justify-center">
+        <label 
+          class="font-[700] uppercase text-[12px] pb-1"
+          for="day">Day</label>
+        <input 
+          class="bg-[var(--white)] rounded-md text-center font-bold border-[1.5px] border-var(--smokey-gray) w-12 text-lg"
+          type="number" name="day" id="day">
+      </article>
+      <article class="flex flex-col items-start justify-center">
+        <label 
+          class="font-[700] uppercase text-[12px] pb-1"
+          for="day">Month</label>
+        <input 
+          class="bg-[var(--white)] rounded-md text-center font-bold border-[1.5px] border-var(--smokey-gray) w-12 text-lg"
+          type="number" name="month" id="month">
+      </article>
+      <article class="flex flex-col items-start justify-center">
+        <label 
+          class="font-[700] uppercase text-[12px] pb-1"
+          for="day">Year</label>
+        <input 
+          class="bg-[var(--white)] rounded-md text-center font-bold border-[1.5px] border-var(--smokey-gray) w-12 text-lg"
+          type="number" name="year" id="year">
+      </article>
+    </section>
+    <section class="relative">
+      <figure class="bg-[var(--purple)] rounded-full w-[70px] h-[70px] flex items-center justify-center absolute inset-0 m-auto cursor-pointer">
+        <img src="./assets/images/icon-arrow.svg" id="boton" alt="arrow" class="w-[50%] h-[50%]">
+      </figure>
+      <hr class="border-[1.5px] border-[var(--light-grey)] w-[80%] mx-auto"/>
+    </section>
+    <section class="resultado flex flex-col items-start mt-7 py-5 px-2">
+      <p class="text-3xl font-bold italic">
+        <span class="numero text-[var(--purple)] anios"></span> 
+        <span class="texto">years</span>
+      </p>
+      <p class="text-3xl font-bold italic">
+        <span class="numero text-[var(--purple)] meses"></span> 
+        <span class="texto">months</span>
+      </p>
+      <p class="text-3xl font-bold italic">
+        <span class="numero text-[var(--purple)] dias"></span> 
+        <span class="texto">days</span>
+      </p>
+    </section>
+  </main>
+  <div class="attribution text-sm font-base text-center mt-5">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Matias Saade</a>.
   </div>
+  <script src="./script.js"></script>
 </body>
 </html>
